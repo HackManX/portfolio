@@ -1,0 +1,23 @@
+{
+  "name": "react-mongodb-contact-app",
+  "version": "1.0.0",
+  "description": "A React application connected to MongoDB for saving client contact information.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node backend/server.js",
+    "client": "npm start --prefix frontend",
+    "install": "npm install --prefix frontend && npm install --prefix backend"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
